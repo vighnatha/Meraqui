@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+    font-family: sans-serif;
+}
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+.krishna{
+    margin-top: 70px;
+    font: 20px Poppins,sans-serif;
+    color: #7a7a7a;
+}
+.krishna>h1{
+    color:#000000;
+    font: 50px Poppins,sans-serif;
+    
+}
+.krishna1{
+    font-size: 50px;
+}
+                                /* mabile view start */
+@media screen and (max-width:426px) {
+    .krishna1{
+        font-size: 20px;
+    }
+    .krishna3{
+        width: 100px;
+    }
+    .for-tab{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+                          
+    
+}
+                               /* mobile view end */
+                               /* laptop start */
+@media screen and (min-width:769px) and (max-width:1025px){
+/* .krishna7{
+    width: 50%;
+} */
+    
+}
+                               /* laptop view end */
+                              /* tab view start */
+@media screen and (min-width:427px) and (max-width:768px){
+    
+.for-tab{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.krishna3{
+    left: 100px;
+
+
+}
+.krishna1{
+    font-size: 40px;
+}
+     
+    
+}
+                               /* tab view end */

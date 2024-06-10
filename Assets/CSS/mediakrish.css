@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+.video-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-background video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color:white;
+}
+.RAJ-1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.RAJ-1 h1 {
+    color: #6EC1E4;
+    text-align: left;
+    margin-top: 50px;
+}
+.RAJ-2 {
+ text-align: left;
+}
+.RAJ-2 img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 500px;
+}
+.RAJ-2 h2 {
+    color: #6EC1E4;
+    font-size: 24px;
+}
+.RAJ-2 p {
+    font-size: 16px;
+    color: #7A7A7A;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.read-more:hover {
+    background-color: #45a049;
+}
+/* laptop start */
+@media screen and (min-width:769px) and (max-width:1025px){
+    .RAJ-2 img {
+        max-width: 100%;
+        height: auto;
+        padding-left: 300px;
+    }
+    
+}
+                              /* tab view start */
+@media screen and (min-width:427px) and (max-width:768px){
+    .RAJ-2 img {
+        max-width: 100%;
+        height: auto;
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width:426px){
+    .RAJ-2 img {
+        max-width: 100%;
+        height: auto;
+        padding-left: 50px;
+    }
+}
